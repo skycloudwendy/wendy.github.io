@@ -1,85 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
- <title>wedny's blog</title>
- <style>
-  body {
-   margin: 0;
-   padding: 0;
-   font-family: Arial, sans-serif;
-   color: #333;
-   background-color: #f5f5f5;
-  }
-
-  .header {
-   background-color: #007bff;
-   color: #fff;
-   padding: 20px;
-   text-align: center;
-  }
-
-  h1 {
-   margin: 0;
-   font-size: 36px;
-  }
-
-  h2 {
-   margin: 20px 0 10px;
-   font-size: 24px;
-  }
-
-  p {
-   margin: 10px 0;
-   line-height: 1.5;
-   text-align: justify;
-  }
-
-  #cool-button {
-   position: fixed;
-   bottom: 30px;
-   right: 30px;
-   font-size: 24px;
-   background-color: #007bff;
-   color: #fff;
-   border: none;
-   border-radius: 50%;
-   padding: 20px;
-   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
-   cursor: pointer;
-   animation: cool 2s forwards;
-  }
-
-  @keyframes cool {
-   0% {
-    transform: scale(1);
-   }
-   25% {
-    transform: scale(1.2);
-    background-color: #f44336;
-   }
-   50% {
-    transform: scale(1) rotate(180deg);
-    background-color: #ff9800;
-   }
-   75% {
-    transform: scale(1.2) rotate(360deg);
-    background-color: #4CAF50;
-   }
-   100% {
-    transform: scale(1);
-    background-color: #007bff;
-   }
-  }
- </style>
-</head>
-<body>
- <div class="header">
-  <h1>wendy's blog</h1>
- </div>
- <div class="content">
-  <h2>My First Blog Post</h2>
-  <p>你所热爱的，就是你的生活.</p>
- </div>
- <button id="cool-button">Contact Me</button>
-</body>
-</html>
+<link rel="stylesheet" href="style.css">
+<div class="login-panel">
+  <h2>用户登录</h2>
+  <form>
+    <label for="username">用户名：</label>
+    <input type="text" id="username" name="username" placeholder="请输入用户名" required>
+    <label for="password">密码：</label>
+    <input type="password" id="password" name="password" placeholder="请输入密码" required>
+    <button type="submit">登录</button>
+  </form>
+</div>
