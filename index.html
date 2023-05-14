@@ -1,111 +1,86 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
+ <title>My Personal Blog</title>
+ <style>
+  body {
+   margin: 0;
+   padding: 0;
+   font-family: Arial, sans-serif;
+   color: #333;
+   background-color: #f5f5f5;
+  }
 
-    <title>欢迎来到我的网站</title>
+  .header {
+   background-color: #007bff;
+   color: #fff;
+   padding: 20px;
+   text-align: center;
+  }
 
+  h1 {
+   margin: 0;
+   font-size: 36px;
+  }
+
+  h2 {
+   margin: 20px 0 10px;
+   font-size: 24px;
+  }
+
+  p {
+   margin: 10px 0;
+   line-height: 1.5;
+   text-align: justify;
+  }
+
+  #cool-button {
+   position: fixed;
+   bottom: 30px;
+   right: 30px;
+   font-size: 24px;
+   background-color: #007bff;
+   color: #fff;
+   border: none;
+   border-radius: 50%;
+   padding: 20px;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+   cursor: pointer;
+   animation: cool 2s forwards;
+  }
+
+  @keyframes cool {
+   0% {
+    transform: scale(1);
+   }
+   25% {
+    transform: scale(1.2);
+    background-color: #f44336;
+   }
+   50% {
+    transform: scale(1) rotate(180deg);
+    background-color: #ff9800;
+   }
+   75% {
+    transform: scale(1.2) rotate(360deg);
+    background-color: #4CAF50;
+   }
+   100% {
+    transform: scale(1);
+    background-color: #007bff;
+   }
+  }
+ </style>
 </head>
-
 <body>
-
-    <header>
-
-        <h1>我的网站</h1>
-
-        <nav>
-
-            <ul>
-
-                <li><a href="#home">首页</a></li>
-
-                <li><a href="#about">关于我们</a></li>
-
-                <li><a href="#services">我们的服务</a></li>
-
-                <li><a href="#contact">联系我们</a></li>
-
-            </ul>
-
-        </nav>
-
-    </header>
-
-    <main>
-
-        <section id="home">
-
-            <h2>欢迎来到我们的网站</h2>
-
-            <p>这里是我们的网站的主页</p>
-
-        </section>
-
-        <section id="about">
-
-            <h2>关于我们</h2>
-
-            <p>我们是一家提供高质量服务的公司</p>
-
-        </section>
-
-        <section id="services">
-
-            <h2>我们的服务</h2>
-
-            <ul>
-
-                <li>服务 A</li>
-
-                <li>服务 B</li>
-
-                <li>服务 C</li>
-
-            </ul>
-
-        </section>
-
-        <section id="contact">
-
-            <h2>联系我们</h2>
-
-            <form>
-
-                <label for="name">姓名：</label>
-
-                <input type="text" name="name" id="name" required>
-
-                
-
-                <label for="email">电子邮件：</label>
-
-                <input type="email" name="email" id="email" required>
-
-                
-
-                <label for="message">留言：</label>
-
-                <textarea name="message" id="message" rows="5" required></textarea>
-
-                
-
-                <button type="submit">发送</button>
-
-            </form>
-
-        </section>
-
-    </main>
-
-    <footer>
-
-        <p>&copy; 2022 | 我的网站</p>
-
-    </footer>
-
+ <div class="header">
+  <h1>Welcome to My Personal Blog</h1>
+ </div>
+ <div class="content">
+  <h2>My First Blog Post</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt risus sed lorem egestas, sit amet vestibulum tortor laoreet. Nulla facilisi. Sed bibendum quam ac nunc bibendum, a sagittis velit ultrices. Donec eget justo ut odio blandit pretium et at orci.</p>
+  <p>Pellentesque sit amet facilisis leo. Pellentesque fringilla ornare elit et viverra. Nunc interdum venenatis lacus vel iaculis. Donec quis nisi ac ante blandit malesuada. Quisque vel bibendum mauris.</p>
+ </div>
+ <button id="cool-button">Contact Me</button>
 </body>
-
 </html>
-
-的
