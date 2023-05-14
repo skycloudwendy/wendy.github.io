@@ -3,8 +3,7 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
   background-image: url('picture.jpg');
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
 }
 
