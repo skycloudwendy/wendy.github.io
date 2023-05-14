@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人博客</title>
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            transition: all 0.5s ease;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav a {
+            color: #000000;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            margin-top: 50px;
+        }
+
+        article {
+            margin-bottom: 30px;
+        }
+
+        h1, h2, p {
+            margin: 0 0 10px 0;
+        }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>个人博客</h1>
+        <nav>
+            <a href="#home">主页</a>
+            <a href="#articles">文章</a>
+            <a href="#about">我的</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>欢迎来到我的博客！</h2>
+            <p>在这里，您可以阅读我的文章和了解更多关于我的信息。</p>
+        </section>
+
+        <section id="articles">
+            <h2>文章</h2>
+            <article>
+                <h3>文章标题1</h3>
+                <p>这是一篇示例文章。你可以在这里添加自己的内容。</p>
+            </article>
+            <article>
+                <h3>文章标题2</h3>
+                <p>这是另一篇示例文章。请随意修改或删除这些文章。</p>
+            </article>
+        </section>
+
+        <section id="about">
+            <h2>我的</h2>
+            <p>你好！我是一个热爱技术的人。欢迎访问我的个人博客，在这里你可以找到我最近的文章和一些关于我的故事。</p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2022 个人博客. 保留所有权利.
+    </footer>
+</div>
+</body>
+</html>
