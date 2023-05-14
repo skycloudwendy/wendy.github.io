@@ -2,30 +2,25 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>我的博客</title>
+  <title>原之巅</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body style="background-image: url('picture.jpg'); background-size: cover; background-position: center;">
 
   <div class="login-panel">
-    <h2>欢迎来到我的博客</h2>
-    <button class="enter-blog-btn">进入我的博客</button>
-    <div class="progress-bar"></div>
+    <h2>原之巅，傲世间，先有原神后有天</h2>
+    <div class="enter-blog-btn" id="enter-blog-btn">
+      进入
+    </div>
   </div>
 
   <script>
-    const enterBlogBtn = document.querySelector('.enter-blog-btn');
-    const progressBar = document.querySelector('.progress-bar');
+    const enterBlogBtn = document.getElementById('enter-blog-btn');
 
     enterBlogBtn.addEventListener('click', () => {
-      // 设置进度条的宽度从 0% 到 100%
-      progressBar.style.width = '100%';
-
-      // 等待 3 秒钟，然后跳转到博客页面
-      setTimeout(() => {
-        window.location.href = 'blog.html';
-      }, 3000);
+      window.location.href = 'blog.html';
     });
   </script>
+
 </body>
 </html>
