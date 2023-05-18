@@ -1,202 +1,64 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Genshin Impact | Home</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Montserrat', sans-serif;
-            background-color: #000;
-        }
-
-        header {
-            position: fixed;
-            z-index: 999;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 80px;
-            background-color: #232323;
-        }
-
-        .logo {
-            float: left;
-            margin-top: 20px;
-            margin-left: 20px;
-            height: 40px;
-        }
-
-        nav {
-            float: right;
-            margin-top: 28px;
-            margin-right: 20px;
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav ul li {
-            margin: 0 10px;
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            padding: 5px 10px;
-            border-radius: 5px;
-        }
-
-        nav ul li a:hover,
-        nav ul li a:active {
-            background-color: #D73128;
-        }
-
-        #banner {
-            height: 600px;
-            background-color: #0C0C0C;
-            background-image: url('http://genshin.astrophel.top/random.php?w=1440&h=600');
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: cover;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-        }
-
-        #banner h1 {
-            font-size: 4.8rem;
-            margin: 0;
-            text-shadow: 2px 2px black;
-        }
-
-        #banner button {
-            margin-top: 30px;
-            border: none;
-            border-radius: 5px;
-            background-color: #D73128;
-            color: #fff;
-            font-size: 24px;
-            padding: 12px 20px;
-            transition: opacity 0.2s ease-in-out;
-        }
-
-        #banner button:hover,
-        #banner button:active {
-            opacity: 0.8;
-            cursor: pointer;
-        }
-
-        #about {
-            background-color: #1B1B1B;
-            color: #fff;
-            padding: 100px 0;
-        }
-
-        #about h2 {
-            font-size: 3rem;
-            margin-bottom: 50px;
-            text-align: center;
-            text-shadow: 2px 2px #fff;
-        }
-
-        #about p {
-            font-size: 2rem;
-            margin-bottom: 50px;
-            text-align: center;
-            line-height: 1.5;
-        }
-
-        #about img {
-            display: block;
-            margin: 0 auto;
-            max-width: 100%;
-            border: 5px solid #D73128;
-            border-radius: 5px;
-            box-shadow: 5px 5px 10px rgba(0,0,0,.5);
-            width: 80%;
-            max-width: 600px;
-        }
-
-        @media only screen and (max-width: 768px) {
-            .logo {
-                margin-top: 10px;
-            }
-            nav {
-                margin-top: 18px;
-            }
-            nav ul li a {
-                font-size: 14px;
-                padding: 5px;
-            }
-            #banner h1 {
-                font-size: 2.5rem;
-            }
-            #banner button {
-                font-size: 20px;
-                padding: 8px 15px;
-            }
-            #about p {
-                font-size: 1.5rem;
-            }
-        }
-
-    </style>
-
-</head>
-<body>
-<header>
-        <a href="index.html" class="logo">
-            <img src="https://i.imgur.com/JVNz3nm.png" alt="Logo">
-        </a>
-        <nav>
-            <ul>
-                <li><a href="#">Characters</a></li>
-                <li><a href="#">="#">Story</a></li>
-                <li><a href="#">World</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Community</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div id="banner">
-        <h1>Genshin Impact</h1>
-        <button>Play Now</button>
-    </div>
-
-    <div id="about">
-        <h2>About</h2>
-        <p>Genshin Impact is an open-world action RPG developed by miHoYo. Explore the world of Teyvat, form your own party of characters, and take on a variety of enemies and challenges. With stunning graphics, engaging gameplay, and a vast world to discover, Genshin Impact is an unforgettable experience.</p>
-        <img src="http://genshin.astrophel.top/random.php?w=600&h=450" alt="Gameplay Screenshot">
-    </div>
-
-    <script>
-        // Slide in button animation
-        const button = document.querySelector('button');
-        button.addEventListener('click', () => {
-            window.alert('Genshin Impact is not deployed yet. Please play the official version.');
-        });
-
-        const buttonAnimation = button.animate([
-            { transform: 'translateY(0%)' },
-            { transform: 'translateY(-20%)' },
-            { transform: 'translateY(0%)' }
-        ], {
-            duration: 1000,
-            iterations: Infinity,
-            easing: 'ease-in-out',
-            fill: 'forwards',
-            delay: '5s'
-        });
-    </script>
-</body>
-</html>
+<!DOCTYPE html>  
+<html lang="en">  
+  
+<head>  
+    <meta charset="UTF-8">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Document</title>  
+    <style>  
+        body {  
+            margin: 0;  
+            padding: 0;  
+            height: 100vh;  
+            display: flex;  
+            justify-content: center;  
+            align-items: center;  
+            background-color: #efeeee;  
+            gap: 30px;  
+        }  
+  
+        img {  
+            width: 60px;  
+        }  
+  
+        .img {  
+            width: 100px;  
+            height: 100px;  
+            display: flex;  
+            justify-content: center;  
+            align-items: center;  
+            border-radius: 20px;  
+            box-shadow: 18px 18px 30px rgba(0, 0, 0, 0.2),  
+                -18px -18px 30px rgba(255, 255, 255, 1);  
+            transition: all 0.2s ease-in-out;  
+        }  
+  
+        .img:hover {  
+            cursor: pointer;  
+            box-shadow: 0 0 0 rgba(0, 0, 0, 0.2),  
+                0 0 0 rgba(255, 255, 255, 0.8),  
+                inset 18px 18px 30px rgba(0, 0, 0, 0.1),  
+                inset -18px -18px 30px rgba(255, 255, 255, 1);  
+        }  
+  
+        .img:hover img {  
+            width: 58px;  
+        }  
+    </style>  
+</head>  
+  
+<body>  
+    <div class="img">  
+        <img src="/qq.png"  
+            alt="qq">  
+    </div>  
+  
+    <div class="img">  
+        <img src="/bilibili.jpg"  
+            alt="bilibili">  
+    </div>  
+    
+</body>  
+  
+</html> 
