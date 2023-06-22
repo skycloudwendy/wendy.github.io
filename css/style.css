@@ -1,13 +1,20 @@
 body {
-    background-image: url("../img/background.jpg");
-    background-size: cover; /*设置图像大小以填满整个界面*/
+  background-image: url("../img/background.jpg");
+  background-size: cover; /*设置图像大小以填满整个界面*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   }
-  
 
 .music {
-    position: fixed;
-    bottom: 0;
-    left: 70%;
-    transform: translateX(-50%);
-    width: 50%;
-   }
+  position: fixed;
+  bottom: 0;
+  left: 70%;
+  transform: translateX(-50%);
+  width: 50vw; /* 设置为视口宽度的50% */
+  }
+
+.music button {
+  height: 4vw; /* 设置为视口宽度的4% */
+  width: 100%; /* 设置为宽度为父元素宽度的100% */
+  font-size: 3vw; /* 设置为视口宽度的3% */
+  }
