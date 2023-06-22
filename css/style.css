@@ -1,9 +1,11 @@
 body {
   background-image: url("../img/background.jpg");
-  background-size: cover; /*设置图像大小以填满整个界面*/
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position:center center;
+  background-position: center center;  /* 将背景图片居中 */
+  min-height: 100vh; /* 保持背景图片的高度与浏览器窗口的高度一致 */
+  min-width: 100vw; /* 保持背景图片的宽度与浏览器窗口的宽度一致 */
   }
 
 .music {
